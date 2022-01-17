@@ -1,0 +1,134 @@
+body {
+  background: url("../images/g_background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(4, 200px);
+  grid-column-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#score1{
+  position: fixed;
+  bottom: -50px;
+  left: -20px;
+  border-radius: 25px;
+  background: lightgrey;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+
+#score2{
+  position: fixed;
+  bottom: -50px;
+  right: -20px;
+  border-radius: 25px;
+  background: lightgrey;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+}
+
+#timer{
+  font-weight: bold;
+}
+
+#name{
+  font-weight: bold;
+}
+
+footer{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer::before{
+  content: " ..... ";
+  color: var(--TUDcolor);
+  font-size: 10px;
+}
+
+footer::after{
+  content: " ------- ";
+  color: var(--TUDcolor);
+  font-size: 10px;
+}
+
+#homeButton{
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  left: 10px;
+  top: 10px;
+}
+
+.waiting-message{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background: red;
+  padding: 10px;
+}
+
+.end-message{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background: red;
+  padding: 10px;
+}
+
+#newGameButton{
+  position: relative;
+  left: 45.5%;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  background: var(--TUDcolor);
+  color: white;
+  box-shadow: 0px 15px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+#newGameButton:hover{
+  transform: translateY(10px);
+  transition: 0.2s;
+}
+
+#name:active{
+  color: red;
+}
+
+.color{
+  color: var(--TUDcolor);
+}

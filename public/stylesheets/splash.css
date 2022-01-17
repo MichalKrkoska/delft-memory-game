@@ -1,0 +1,115 @@
+body {
+  background: url("../images/s_background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  height: 80px;
+  font-size: 60px;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+  
+}
+
+#top{
+  padding:10px;
+  text-align: center;
+  color: var(--TUDcolor);
+}
+
+#top:hover{
+  color: black;
+}
+
+main button {
+  display: inline-block;
+  cursor: pointer;
+  width: 600px;
+  height: 160px;
+  padding: 3px 10px;
+  
+  background: var(--TUDcolor);
+  color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  border: none;
+
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 1px;
+}
+
+main button:hover{
+  transform: translateY(10px);
+  transition: 0.2s;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 20px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: var(--TUDcolor);
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--TUDcolor);
+}
+footer h3{
+  text-align: center;
+  font-size: 40px;
+}
+
+footer h3:active{
+  color: red;
+}
+
+#footer{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#info {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 30px);
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  bottom: 100%;
+  
+  padding: 10px;
+  font-size: 20px;
+}
+
+#CP_text::before{
+  content: " ..... ";
+  color: var(--TUDcolor);
+  font-size: 10px;
+}
+
+#TC_text::after{
+  content: " ..... ";
+  color: var(--TUDcolor);
+  font-size: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/splash.css">
+  <title>Delft Memory Game</title>
+</head>
+<body scroll="no"style="overflow: hidden">
+  <header>
+    <section>
+      <h1 id="top">Delft</h1>
+    <hr>
+      <h1>Memory Game</h1>
+    </section>
+    <div id="sign"></div>
+  </header>
+
+  <main>
+    <section id="interactive">
+        <form action="/play" method="get">
+          <button type="submit" id="button">PLAY</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Stats</h3>
+    <hr>
+    <section id="info">
+      <div id="CP_text">In-game players:</div>
+      <div id="CG_text">Games played:</div>
+      <div id="TC_text">Total cards flipped:</div>
+      <div id="CP">
+        <%= CP %>
+      </div>
+      <div id="CG">
+        <%= CG %>
+      </div>
+      <div id="TC">
+        <%= TC %>
+      </div>
+    </section>
+    <p id="name"><a href="https://www.tudelft.nl">©TU Delft Project</a></p>
+  </footer>
+</body>
+</html>
