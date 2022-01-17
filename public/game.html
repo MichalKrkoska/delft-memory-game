@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/game.css">
+  <title>Delft Memory Game</title>
+</head>
+<body scroll="no"style="overflow: hidden">
+  <div id="sign"></div>
+
+  <h3 id="score1">Your<br><div class="color">Score: </div><span id="result1"></span></h3>
+  <h3 id="score2">Opponent's<br><div class="color">Score: </div><span id="result2"></span></h3>
+
+  <div class="grid"></div>
+  
+  <div class="end-message" style="display: none;">
+    <div data-winning-message-text></div>
+  </div>
+
+  <form action="/" method="get" id="homeButtonForm">
+    <button type="submit" id='newGameButton' style="display: none;">PLAY AGAIN</button>
+  </form>
+  
+  <div class="waiting-message" style="display: block;">
+      <div data-winning-message-text>Waiting for another player...</div>
+  </div>
+
+  <div id="portNumber" style="visibility: hidden"><%=portNumber %></div>
+  <footer>
+    <form action="/" method="get">
+      <button type="submit" id="homeButton" class="controls" style="white-space: pre-line"></button>
+    </form>
+    <div id="timer">Time  <span id="time">00:00</span></div>
+      <hr>
+    <div id="name">Turn: <span id="turn"></span></div>
+    <br>
+    <p id="name"><a href="https://www.tudelft.nl">©TU Delft Project</a></p>
+  </footer>  
+  <script src="javascripts/interactions.js"></script>
+</body>
+</html>
